@@ -72,8 +72,15 @@ export default async function handler(req, res) {
 
         return res.status(400).json({ error: "Ismeretlen muvelet" });
 
-    } catch (error) {
+        } catch (error) {
         console.error(error);
         return res.status(500).json({ error: error.message });
-    }
+    
+        "name": "orfk-mdt",
+        "version": "1.0.0",
+        "type": "module",
+        "dependencies": {
+        "@neondatabase/serverless": "^0.9.0"
 }
+}
+
